@@ -4,19 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ozthra.common</groupId>
 	<artifactId>eureka-server</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Brixton.SR1</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	<parent>
+		<groupId>com.ozthra.parent</groupId>
+		<artifactId>ozthra-pom</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
 	
 	<dependencies>
 		<dependency>
