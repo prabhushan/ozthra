@@ -7,11 +7,11 @@ eureka:
     fetchRegistry: false
     
   instance:
-    hostname: localhost
+    hostname: vm-registration
     leaseRenewalIntervalInSeconds: 5
     
   serviceUrl:
-    defaultZone: http://localhost:1111/eureka/
+    defaultZone: http://vm-registration:1111/eureka/
     
 spring:
   application:
