@@ -69,7 +69,7 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
 					<descriptors>
-						<descriptor>assumbly/assembly.xml</descriptor>
+						<descriptor>assembly/assembly.xml</descriptor>
 					</descriptors>
 				</configuration>
 				<executions>
