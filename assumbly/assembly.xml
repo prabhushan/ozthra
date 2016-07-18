@@ -1,0 +1,18 @@
+<assembly xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.1">
+    <id>distribution</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+ 	<includeSiteDirectory>false</includeSiteDirectory>
+
+  	<fileSets>
+	  	<fileSet>             
+		  	<directory>${project.basedir}/target/assumble/lib</directory>             
+		  	<outputDirectory>/lib</outputDirectory>         
+	  	</fileSet>
+	  	<fileSet>             
+		  	<directory>${project.basedir}/target/assumble/bin</directory>             
+		  	<outputDirectory>/bin</outputDirectory>         
+	  	</fileSet>
+  	</fileSets>
+</assembly>
