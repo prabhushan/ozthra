@@ -5,11 +5,17 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    healthcheck:
+      enabled: true
     
   instance:
     hostname: vm-registration
     leaseRenewalIntervalInSeconds: 5
+    leaseExpirationDurationInSeconds: 7
     
+  server:
+    enableSelfPreservation: false
+  
   serviceUrl:
     defaultZone: http://vm-registration:1111/eureka/
     
