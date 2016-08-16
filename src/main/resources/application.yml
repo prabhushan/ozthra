@@ -17,7 +17,7 @@ eureka:
     enableSelfPreservation: false
   
   serviceUrl:
-    defaultZone: http://vm-registration:1111/eureka/
+    defaultZone: http://localhost:1111/eureka/
     
 spring:
   application:
